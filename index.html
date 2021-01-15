@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jacob Yoon - 3D Artist</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tdd5rjb.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="header">
+        <a href="/" class="logo">Jacob Yoon</a>
+        <div id="links">
+            <a href="/about">About</a>
+            <a class="contact" href="/contact">Contact</a>
+        </div>
+    </div>
+    <div id="pageWrap">
+        <div id="projects" draggable="true">
+            <div class="x" id="x0"><img id="0" src="" alt=""></div>
+            <div class="x" id="x1"><img id="1" src="" alt=""></div>
+            <div class="x" id="x2"><img id="2" src="" alt=""></div>
+            <div class="x" id="x3"><img id="3" src="" alt=""></div>
+            <div class="x" id="x4"><img id="4" src="" alt=""></div>
+            <div class="x" id="x5"><img id="5" src="" alt=""></div>
+            <div class="x" id="x6"><img id="6" src="" alt=""></div>
+            <div class="x" id="x7"><img id="7" src="" alt=""></div>
+            <div class="x" id="x8"><img id="8" src="" alt=""></div>
+            <div class="x" id="x9"><img id="9" src="" alt=""></div>
+            <div class="x" id="x10"><img id="10" src="" alt=""></div>
+            <div class="x" id="x11"><img id="11" src="" alt=""></div>
+            <div class="x" id="x12"><img id="12" src="" alt=""></div>
+            <div class="x" id="x13"><img id="13" src="" alt=""></div>
+            <div class="x" id="x14"><img id="14" src="" alt=""></div>
+            <div class="x" id="x15"><img id="15" src="" alt=""></div>
+            <div class="x" id="x16"><img id="16" src="" alt=""></div>
+            <div class="x" id="x17"><img id="17" src="" alt=""></div>
+            <div class="x" id="x18"><img id="18" src="" alt=""></div>
+            <div class="x" id="x19"><img id="19" src="" alt=""></div>
+            <div class="x" id="x20"><img id="20" src="" alt=""></div>
+            <div class="x" id="x21"><img id="21" src="" alt=""></div>
+            <div class="x" id="x22"><img id="22" src="" alt=""></div>
+            <div class="x" id="x23"><img id="23" src="" alt=""></div>
+            <div class="x" id="x24"><img id="24" src="" alt=""></div>
+            <div class="x" id="x25"><img id="25" src="" alt=""></div>
+            <div class="x" id="x26"><img id="26" src="" alt=""></div>
+            <div class="x" id="x27"><img id="27" src="" alt=""></div>
+            <div class="x" id="x28"><img id="28" src="" alt=""></div>
+            <div class="x" id="x29"><img id="29" src="" alt=""></div>
+            <script>
+                var i = 0;
+                for (var i = 0; i <= 29; i++) {
+                    document.getElementById(i).src = "img/" + i + ".jpg";
+                    document.getElementById("x" + i).style.zIndex = -1 * i;
+                    //document.getElementById(i).style.transform = "translateX(" + (Math.random() * window.innerWidth - (window.innerWidth / 2)) + "px) translateY(" + (Math.random() * window.innerHeight - (window.innerHeight / 2)) + "px)";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="scroll">
+        Scroll ↓
+    </div>
+    <div id="preload">
+        <div id="p"></div>
+    </div>
+    <div id="cursorFollower"></div>
+    <div id="cursor">
+        <div class="a"></div>
+        <div class="b"></div>
+        <span class=""></span>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+            document.getElementById('preload').style.opacity = "0";
+        });
+    </script>
+</body>
+</html>

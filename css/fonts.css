@@ -1,0 +1,5 @@
+@font-face {
+    font-family: Styrene B;
+    src: url(StyreneB-Regular.woff2) format('woff2'), url(StyreneB-Regular.woff) format("woff");
+    font-weight:400;font-style:normal;
+}

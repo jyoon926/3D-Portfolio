@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jacob Yoon - 3D Artist</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tdd5rjb.css">
+</head>
+<body>
+    <div id="header">
+        <a href="/" class="logo">Jacob Yoon</a>
+        <div id="links">
+            <a href="/about">About</a>
+            <a class="contact" href="/contact">Contact</a>
+        </div>
+    </div>
+    <div id="about">
+        <p id="desc">
+            <a href="mailto:jacobyoon926@gmail.com">Email</a>
+            <br>
+            <a href="https://www.instagram.com/jacobyoonart/" target="none">Instagram</a>
+        </p>
+        <div id="footer">© Jacob Yoon 2021</div>
+    </div>
+    <!--<div id="preload"><p id="p"></p></div>-->
+    <div id="cursorFollower"></div>
+    <div id="cursor">
+        <div class="a"></div>
+        <div class="b"></div>
+        <span class=""></span>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+            document.getElementById('p').style.opacity = "0";
+            document.getElementById('preload').style.top = "-100vh";
+        });
+    </script>
+</body>
+</html>
